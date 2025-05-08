@@ -7,76 +7,107 @@
   <style>
     body {
       font-family: sans-serif;
+      background: #f4f4f4;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
     }
     header {
-      background-color: #00695c;
+      background: #6b4fbb;
       color: white;
-      padding: 20px;
+      padding: 1em;
       text-align: center;
     }
     nav {
-      background-color: #004d40;
-      padding: 10px;
+      background: #f8f8f8;
+      padding: 0.5em;
       text-align: center;
     }
     nav a {
-      color: white;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
+      color: #6b4fbb;
     }
     section {
-      padding: 20px;
+      padding: 2em;
+      background: white;
+      margin: 1em;
+      border-radius: 10px;
     }
     footer {
-      background-color: #004d40;
-      color: white;
       text-align: center;
-      padding: 10px;
+      background: #eee;
+      padding: 1em;
+      font-size: 0.9em;
     }
-    .lang-buttons {
-      text-align: right;
-      padding: 10px;
-      background-color: #eee;
-    }
-    .lang-buttons a {
-      margin: 0 5px;
-      padding: 6px 12px;
-      text-decoration: none;
+    input, textarea {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      font-weight: bold;
     }
-    .lang-buttons .active {
-      background-color: #28a745;
+    button {
+      padding: 10px 20px;
+      background-color: #6b4fbb;
       color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .lang-buttons .inactive {
-      background-color: #ccc;
-      color: black;
+    button:hover {
+      background-color: #5639a8;
     }
   </style>
 </head>
 <body>
-  <div class="lang-buttons">
-    <a href="index.html" class="inactive">English</a>
-    <a href="bn.html" class="active">বাংলা</a>
-    <a href="hi.html" class="inactive">हिंदी</a>
-  </div>
-
   <header>
     <h1>ধাম ট্যুরিজমে স্বাগতম</h1>
     <p>মায়াপুর দর্শনের জন্য আপনার নির্ভরযোগ্য গাইড।</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#services">সেবা</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+
+  <section id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>আমরা মায়াপুরে আধ্যাত্মিক ভ্রমণ পরিচালনা করি — এটি শ্রী চৈতন্য মহাপ্রভুর ভূমি এবং ইসকনের সদর দপ্তর।</p>
+  </section>
+
+  <section id="services">
     <h2>আমাদের সেবা</h2>
-    <p>আমরা ভ্রমণের ব্যবস্থা, থাকার ব্যবস্থা ও ট্যুর গাইড সেবা প্রদান করি।</p>
+    <ul>
+      <li>ইসকন মন্দির ও গঙ্গা দর্শন হাঁটা ভ্রমণ</li>
+      <li>নবদ্বীপ পরিক্রমা (অর্ধ বা পূর্ণ দিন)</li>
+      <li>পরিবার/দলের জন্য কাস্টমাইজড ভ্রমণ</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <p>কল বা WhatsApp করুন: <a href="https://wa.me/91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+    <p>ইমেইল: dhamtourism@gmail.com</p>
+    <p>Instagram: @dhamtourism</p>
+
+    <form action="https://formspree.io/f/xovdwyjj" method="POST">
+      <label>আপনার নাম:
+        <input type="text" name="name" required>
+      </label>
+      <label>আপনার ইমেইল:
+        <input type="email" name="email" required>
+      </label>
+      <label>আপনার বার্তা:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">পাঠান</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 ধাম ট্যুরিজম</p>
+    © 2025 ধাম ট্যুরিজম
   </footer>
 </body>
 </html>
