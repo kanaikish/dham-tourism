@@ -9,91 +9,74 @@
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
+      background-color: #f9f9f9;
     }
     header {
-      background-color: #6c5ce7;
+      background-color: #00695c;
       color: white;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #dfe6e9;
+      background-color: #004d40;
       padding: 10px;
       text-align: center;
     }
     nav a {
+      color: white;
       margin: 0 10px;
       text-decoration: none;
-      color: #2d3436;
-      font-weight: bold;
     }
     section {
       padding: 20px;
     }
     footer {
-      background-color: #6c5ce7;
+      background-color: #004d40;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 10px;
     }
-    .language-switcher {
+    .lang-buttons {
       text-align: right;
       padding: 10px;
-      background-color: #fff;
+      background-color: #eee;
     }
-    .language-switcher a {
+    .lang-buttons a {
       margin: 0 5px;
       padding: 6px 12px;
-      background-color: #b2bec3;
-      color: black;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
+    }
+    .lang-buttons .active {
+      background-color: #28a745;
+      color: white;
+    }
+    .lang-buttons .inactive {
+      background-color: #ccc;
+      color: black;
     }
   </style>
 </head>
 <body>
-
-  <div class="language-switcher">
-    <a href="index.html">English</a>
-    <a href="bn.html" style="background-color: #0984e3; color: white;">বাংলা</a>
-    <a href="hi.html">हिंदी</a>
+  <div class="lang-buttons">
+    <a href="index.html" class="inactive">English</a>
+    <a href="bn.html" class="active">বাংলা</a>
+    <a href="hi.html" class="inactive">हिंदी</a>
   </div>
 
   <header>
     <h1>ধাম ট্যুরিজমে স্বাগতম</h1>
-    <p>মায়াপুর দর্শনের জন্য আপনার নির্ভরযোগ্য গাইড</p>
+    <p>মায়াপুর দর্শনের জন্য আপনার নির্ভরযোগ্য গাইড।</p>
   </header>
 
-  <nav>
-    <a href="#about">আমাদের সম্পর্কে</a>
-    <a href="#tours">ভ্রমণ প্যাকেজ</a>
-    <a href="#contact">যোগাযোগ</a>
-  </nav>
-
-  <section id="about">
-    <h2>আমাদের সম্পর্কে</h2>
-    <p>ধাম ট্যুরিজম একটি বিশ্বস্ত ট্রাভেল সার্ভিস, যা মায়াপুর দর্শন করতে আগ্রহী দর্শনার্থীদের জন্য ভ্রমণের সকল সুবিধা প্রদান করে।</p>
-  </section>
-
-  <section id="tours">
-    <h2>ভ্রমণ প্যাকেজ</h2>
-    <ul>
-      <li>১ দিনের মায়াপুর ট্যুর</li>
-      <li>২ রাত ৩ দিনের পূর্ণ প্যাকেজ</li>
-      <li>গ্রুপ বুকিং এর জন্য বিশেষ ছাড়</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>যোগাযোগ করুন</h2>
-    <p>ফোন: +91-XXXXXXXXXX</p>
-    <p>ইমেইল: info@dhamtourism.com</p>
+  <section>
+    <h2>আমাদের সেবা</h2>
+    <p>আমরা ভ্রমণের ব্যবস্থা, থাকার ব্যবস্থা ও ট্যুর গাইড সেবা প্রদান করি।</p>
   </section>
 
   <footer>
     <p>© 2025 ধাম ট্যুরিজম</p>
   </footer>
-
 </body>
 </html>
