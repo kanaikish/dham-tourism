@@ -54,19 +54,40 @@
       color: #555;
       text-decoration: none;
     }
+    form {
+      margin-top: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: sans-serif;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #6b4fbb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <div style="text-align: right; padding: 10px;">
-  <a href="index.html" style="margin: 0 5px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">English</a>
-  <a href="bn.html" style="margin: 0 5px; padding: 6px 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">বাংলা</a>
-  <a href="hi.html" style="margin: 0 5px; padding: 6px 12px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 5px;">हिंदी</a>
-</div>
+    <a href="index.html" style="margin: 0 5px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">English</a>
+    <a href="bn.html" style="margin: 0 5px; padding: 6px 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">বাংলা</a>
+    <a href="hi.html" style="margin: 0 5px; padding: 6px 12px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 5px;">हिंदी</a>
+  </div>
 
   <header>
     <h1>Dham Tourism</h1>
     <p>Your spiritual travel partner in Mayapur</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#tours">Tour Packages</a>
@@ -94,6 +115,22 @@
     <p>Call or WhatsApp: <a href="https://wa.me/91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
     <p>Email: dhamtourism@gmail.com</p>
     <p>Follow us on Instagram: @dhamtourism</p>
+
+    <form action="https://formspree.io/f/xovdwyjj" method="POST">
+      <label>
+        Your Name:
+        <input type="text" name="name" required>
+      </label><br>
+      <label>
+        Your Email:
+        <input type="email" name="email" required>
+      </label><br>
+      <label>
+        Your Message:
+        <textarea name="message" rows="5" required></textarea>
+      </label><br>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
