@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kanaikish.github.io/dham-tourism/sitemap.xml
