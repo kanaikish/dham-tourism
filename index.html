@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dham Tourism | Mayapur</title>
+  <meta name="description" content="Dham Tourism - Guided spiritual tours in Mayapur, ISKCON heritage, and nearby holy places." />
+  <meta name="keywords" content="Mayapur, Dham Tourism, ISKCON, spiritual tour, pilgrimage, tour guide Mayapur" />
+  <meta name="author" content="Dham Tourism" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #6b4fbb;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background: #f8f8f8;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #6b4fbb;
+    }
+    section {
+      padding: 2em;
+      background: white;
+      margin: 1em;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      background: #eee;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .language {
+      font-size: 0.9em;
+      text-align: right;
+      margin-top: -2em;
+      margin-right: 2em;
+    }
+    .language a {
+      margin-left: 10px;
+      color: #555;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dham Tourism</h1>
+    <p>Your spiritual travel partner in Mayapur</p>
+  </header>
+
+  <div class="language">
+    Language:
+    <a href="#en">English</a> |
+    <a href="#hi">हिंदी</a> |
+    <a href="#bn">বাংলা</a>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#tours">Tour Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p id="en">We provide guided spiritual tours in Mayapur — the holy land of Sri Chaitanya Mahaprabhu and ISKCON’s world headquarters.</p>
+    <p id="hi" style="display:none;">हम मायापुर में आध्यात्मिक यात्रा सेवाएँ प्रदान करते हैं — श्री चैतन्य महाप्रभु और इस्कॉन के मुख्यालय की पवित्र भूमि।</p>
+    <p id="bn" style="display:none;">আমরা মায়াপুরে আধ্যাত্মিক ভ্রমণ পরিচালনা করি — এটি শ্রী চৈতন্য মহাপ্রভুর ভূমি এবং ইসকনের সদর দপ্তর।</p>
+  </section>
+
+  <section id="tours">
+    <h2>Tour Packages</h2>
+    <ul>
+      <li>ISKCON Temple + Ganga Darshan Walk</li>
+      <li>Navadvipa Parikrama (half or full day)</li>
+      <li>Customized family/group spiritual tours</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Call or WhatsApp: <a href="https://wa.me/91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+    <p>Email: dhamtourism@gmail.com</p>
+    <p>Follow us on Instagram: @dhamtourism</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Dham Tourism. All rights reserved.
+  </footer>
+
+  <script>
+    const langs = document.querySelectorAll('.language a');
+    langs.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const lang = link.getAttribute('href').substring(1);
+        document.querySelectorAll('#about p').forEach(p => p.style.display = 'none');
+        document.getElementById(lang).style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
