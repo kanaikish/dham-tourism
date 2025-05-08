@@ -7,76 +7,107 @@
   <style>
     body {
       font-family: sans-serif;
+      background: #f4f4f4;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
     }
     header {
-      background-color: #6a1b9a;
+      background: #6b4fbb;
       color: white;
-      padding: 20px;
+      padding: 1em;
       text-align: center;
     }
     nav {
-      background-color: #4a148c;
-      padding: 10px;
+      background: #f8f8f8;
+      padding: 0.5em;
       text-align: center;
     }
     nav a {
-      color: white;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
+      color: #6b4fbb;
     }
     section {
-      padding: 20px;
+      padding: 2em;
+      background: white;
+      margin: 1em;
+      border-radius: 10px;
     }
     footer {
-      background-color: #4a148c;
-      color: white;
       text-align: center;
-      padding: 10px;
+      background: #eee;
+      padding: 1em;
+      font-size: 0.9em;
     }
-    .lang-buttons {
-      text-align: right;
-      padding: 10px;
-      background-color: #eee;
-    }
-    .lang-buttons a {
-      margin: 0 5px;
-      padding: 6px 12px;
-      text-decoration: none;
+    input, textarea {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      font-weight: bold;
     }
-    .lang-buttons .active {
-      background-color: #ffc107;
-      color: black;
+    button {
+      padding: 10px 20px;
+      background-color: #6b4fbb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .lang-buttons .inactive {
-      background-color: #ccc;
-      color: black;
+    button:hover {
+      background-color: #5639a8;
     }
   </style>
 </head>
 <body>
-  <div class="lang-buttons">
-    <a href="index.html" class="inactive">English</a>
-    <a href="bn.html" class="inactive">বাংলা</a>
-    <a href="hi.html" class="active">हिंदी</a>
-  </div>
-
   <header>
     <h1>धाम टूरिज़्म में आपका स्वागत है</h1>
     <p>मायापुर दर्शन के लिए आपका भरोसेमंद गाइड।</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">हमारे बारे में</a>
+    <a href="#services">हमारी सेवाएं</a>
+    <a href="#contact">संपर्क करें</a>
+  </nav>
+
+  <section id="about">
+    <h2>हमारे बारे में</h2>
+    <p>हम मायापुर में आध्यात्मिक यात्रा सेवाएँ प्रदान करते हैं — श्री चैतन्य महाप्रभु और इस्कॉन के मुख्यालय की पवित्र भूमि।</p>
+  </section>
+
+  <section id="services">
     <h2>हमारी सेवाएं</h2>
-    <p>हम यात्रा प्रबंधन, आवास और टूर गाइड सेवाएं प्रदान करते हैं।</p>
+    <ul>
+      <li>इस्कॉन मंदिर और गंगा दर्शन वॉक</li>
+      <li>नवद्वीप परिक्रमा (आधा या पूरा दिन)</li>
+      <li>कस्टम पारिवारिक / समूह यात्रा पैकेज</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>संपर्क करें</h2>
+    <p>कॉल या WhatsApp करें: <a href="https://wa.me/91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+    <p>ईमेल: dhamtourism@gmail.com</p>
+    <p>Instagram: @dhamtourism</p>
+
+    <form action="https://formspree.io/f/xovdwyjj" method="POST">
+      <label>आपका नाम:
+        <input type="text" name="name" required>
+      </label>
+      <label>आपकी ईमेल:
+        <input type="email" name="email" required>
+      </label>
+      <label>आपका संदेश:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">भेजें</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 धाम टूरिज़्म</p>
+    © 2025 धाम टूरिज़्म
   </footer>
 </body>
 </html>
