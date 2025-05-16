@@ -1,75 +1,91 @@
 <body>
   <!-- Language Switcher -->
-  <div class="language" style="padding: 10px;">
+  <div class="language" style="padding: 10px; text-align: right;">
     <a href="index.html" style="margin: 0 5px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">English</a>
     <a href="bn.html" style="margin: 0 5px; padding: 6px 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">বাংলা</a>
     <a href="hi.html" style="margin: 0 5px; padding: 6px 12px; background-color: #ffc107; color: black; text-decoration: none; border-radius: 5px;">हिंदी</a>
   </div>
 
-  <!-- Main Header -->
-  <header>
-    <h1>Dham Tourism</h1>
-    <p>Your spiritual travel partner in Mayapur</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#tours">Tour Packages</a>
-      <a href="#contact">Contact</a>
+  <!-- Main Header with background and animation -->
+  <header style="background: url('images/mayapur-header.jpg') center/cover no-repeat; color: white; text-align: center; padding: 4em 1em; position: relative; animation: fadeIn 2s ease-in-out;">
+    <div style="background-color: rgba(0,0,0,0.5); padding: 2em; border-radius: 10px; display: inline-block;">
+      <h1 style="font-size: 3em; margin-bottom: 0.3em;">Dham Tourism</h1>
+      <p style="font-size: 1.3em;">Your spiritual travel partner in Mayapur</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav style="margin-top: 1.5em;">
+      <a href="#about" style="margin: 0 15px; color: white; text-decoration: none; font-weight: 600;">About</a>
+      <a href="#tours" style="margin: 0 15px; color: white; text-decoration: none; font-weight: 600;">Tour Packages</a>
+      <a href="#contact" style="margin: 0 15px; color: white; text-decoration: none; font-weight: 600;">Contact</a>
     </nav>
   </header>
 
   <!-- Main Content Sections -->
-  <section id="about">
+  <section id="about" style="padding: 2em; max-width: 900px; margin: 2em auto; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h2>About Us</h2>
     <p id="en">We provide guided spiritual tours in Mayapur — the holy land of Sri Chaitanya Mahaprabhu and ISKCON’s world headquarters.</p>
     <p id="hi" style="display:none;">हम मायापुर में आध्यात्मिक यात्रा सेवाएँ प्रदान करते हैं — श्री चैतन्य महाप्रभु और इस्कॉन के मुख्यालय की पवित्र भूमि।</p>
     <p id="bn" style="display:none;">আমরা মায়াপুরে আধ্যাত্মিক ভ্রমণ পরিচালনা করি — এটি শ্রী চৈতন্য মহাপ্রভুর ভূমি এবং ইসকনের সদর দপ্তর।</p>
   </section>
 
-  <section id="tours">
+  <section id="tours" style="padding: 2em; max-width: 900px; margin: 2em auto; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h2>Tour Packages</h2>
-    <ul>
+    <ul style="list-style-type: disc; padding-left: 20px;">
       <li>ISKCON Temple + Ganga Darshan Walk</li>
       <li>Navadvipa Parikrama (half or full day)</li>
       <li>Customized family/group spiritual tours</li>
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" style="padding: 2em; max-width: 900px; margin: 2em auto 3em; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h2>Contact Us</h2>
-    <p>Call or WhatsApp: <a href="https://wa.me/91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
-    <p>Email: dhamtourism@gmail.com</p>
-    <p>Follow us on Instagram: @dhamtourism</p>
+    <p>Call or WhatsApp: <a href="https://wa.me/91XXXXXXXXXX" style="color:#6b4fbb;">+91-XXXXXXXXXX</a></p>
+    <p>Email: <a href="mailto:dhamtourism@gmail.com" style="color:#6b4fbb;">dhamtourism@gmail.com</a></p>
+    <p>Follow us on Instagram: <a href="https://instagram.com/dhamtourism" target="_blank" style="color:#6b4fbb;">@dhamtourism</a></p>
 
-    <form action="https://formspree.io/f/xovdwyjj" method="POST">
+    <form action="https://formspree.io/f/xovdwyjj" method="POST" style="margin-top: 1em;">
       <label>
         Your Name:
-        <input type="text" name="name" required>
+        <input type="text" name="name" required style="width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px;">
       </label><br>
       <label>
         Your Email:
-        <input type="email" name="email" required>
+        <input type="email" name="email" required style="width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px;">
       </label><br>
       <label>
         Your Message:
-        <textarea name="message" rows="5" required></textarea>
+        <textarea name="message" rows="5" required style="width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
       </label><br>
-      <button type="submit">Send</button>
+      <button type="submit" style="background-color: #6b4fbb; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Send</button>
     </form>
   </section>
 
-  <footer>
+  <footer style="text-align: center; padding: 1em 0; background: #eee;">
     &copy; 2025 Dham Tourism. All rights reserved.
   </footer>
 
   <script>
+    // Language toggle script fixed to match IDs ('en', 'hi', 'bn')
     const langs = document.querySelectorAll('.language a');
     langs.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        const lang = link.getAttribute('href').substring(0, 2);
+        const langHref = link.getAttribute('href'); // eg: "index.html"
+        let lang = 'en'; // default
+        if(langHref.includes('hi')) lang = 'hi';
+        else if(langHref.includes('bn')) lang = 'bn';
+
         document.querySelectorAll('#about p').forEach(p => p.style.display = 'none');
         document.getElementById(lang).style.display = 'block';
       });
     });
   </script>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </body>
