@@ -21,6 +21,23 @@
     </nav>
   </header>
 
+  <!-- Image Slider -->
+  <section class="slider-container" style="max-width: 900px; margin: 2em auto; position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 0 15px rgba(0,0,0,0.2);">
+    <div class="slides fade">
+      <img src="images/slide1.jpg" alt="Mayapur View 1" style="width:100%; border-radius: 10px;">
+    </div>
+    <div class="slides fade">
+      <img src="images/slide2.jpg" alt="Mayapur View 2" style="width:100%; border-radius: 10px;">
+    </div>
+    <div class="slides fade">
+      <img src="images/slide3.jpg" alt="Mayapur View 3" style="width:100%; border-radius: 10px;">
+    </div>
+
+    <!-- Navigation Arrows -->
+    <a class="prev" onclick="plusSlides(-1)" style="position: absolute; top: 50%; left: 10px; font-size: 2em; color: white; cursor: pointer; user-select: none; transform: translateY(-50%); text-shadow: 0 0 5px black;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="position: absolute; top: 50%; right: 10px; font-size: 2em; color: white; cursor: pointer; user-select: none; transform: translateY(-50%); text-shadow: 0 0 5px black;">&#10095;</a>
+  </section>
+
   <!-- Main Content Sections -->
   <section id="about" style="padding: 2em; max-width: 900px; margin: 2em auto; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h2>About Us</h2>
@@ -80,12 +97,52 @@
         document.getElementById(lang).style.display = 'block';
       });
     });
+
+    // Slider script
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+
+    // Auto slide every 5 seconds
+    setInterval(() => {
+      plusSlides(1);
+    }, 5000);
   </script>
 
   <style>
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Slider fade animation */
+    .slides {
+      display: none;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+    }
+    @keyframes fade {
+      from {opacity: 0.4}
+      to {opacity: 1}
+    }
+    /* Navigation arrows hover */
+    .prev:hover, .next:hover {
+      color: #6b4fbb;
     }
   </style>
 </body>
